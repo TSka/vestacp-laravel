@@ -7,6 +7,10 @@ server {
     access_log  /var/log/nginx/domains/%domain%.bytes bytes;
     error_log   /var/log/nginx/domains/%domain%.error.log error;
 
+    if ($request_uri ~* "^(.*/)index\.php\/?(.*)") {
+        return 301 $1$2;
+    }
+
     location / {
 		proxy_http_version 1.1;
         proxy_set_header Connection "";
