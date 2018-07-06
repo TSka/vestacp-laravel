@@ -4,7 +4,7 @@
 Installation: `sudo ./install.sh`
 
 Tested with
-- Laravel 5.3
-- VestaCP 0.9.8-16
-- PHP 5.6.11
-- NGINX 1.10.1
+- Laravel 5.4
+- VestaCP 0.9.8-22
+- PHP 7.2.6
+- NGINX 1.14.0
